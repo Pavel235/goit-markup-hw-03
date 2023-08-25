@@ -4,6 +4,41 @@
     background-color: #FFFFFF;
 }
 
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  list-style: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1458px;
+}
+
+.container {
+    width: 1458px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 40px;
+}
+
+nav ul li:first-child {
+    margin-left: 76px;
+}
+
 a {
     text-decoration: none;
 }
@@ -14,6 +49,24 @@ ul {
 
 .address-info {
     font-style: normal;
+}
+
+.address-info ul li {
+    display: inline;
+    align-items: center;
+}
+
+.address-info ul li:first-child {
+    margin-left: 332px; 
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.address-info ul li:last-child {
+    margin-right: 156px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    margin-left: 40px;
 }
 
 .address-style:hover {
@@ -40,6 +93,10 @@ ul {
     font-size: 18px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-left: 156px;
+    margin-top: 24px; 
+    margin-bottom: 24px;
+    width: 115px;
 }
 
 .site {
@@ -76,6 +133,10 @@ ul {
     font-size: 56px;
     text-align: center;
     letter-spacing: 0.02em;
+    padding-top: 188px;
+    padding-left: 472px;
+    padding-right: 472px;
+    padding-bottom: 48px;
 }
 
 .service-button {
@@ -87,6 +148,12 @@ ul {
     cursor: pointer;
     font-size: 16px;
     letter-spacing: 0.04em;
+    border-radius: 4px;
+    width: 169px;
+    height: 56px;
+    margin-right: 635px;
+    margin-left: 636px;
+    margin-bottom: 188px;
 }
 
 .service-button:hover {
@@ -95,6 +162,36 @@ ul {
 
 .service-button:focus {
     background-color: #404BBF;
+}
+
+.advantages ul {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.advantages ul li:first-child {
+    margin-left: 156px;
+}
+
+.advantages ul li:last-child {
+    margin-right: 156px;
+}
+
+.advantages h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1.11;
+    color: #2E2F42;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 
 .advantages-head {
@@ -122,6 +219,32 @@ ul {
     background-color: #F4F4FD;
 }
 
+.team-color h2 {
+    padding-top: 120px;
+    padding-left: 639px;
+    padding-right: 639px;
+}
+
+.team-color ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 72px;
+    padding-bottom: 120px;
+}
+
+.team-color ul li {
+    margin-left: 24px;
+}
+
+.team-color ul li:first-child {
+    margin-left: 156px;
+}
+
+.team-color ul li:last-child {
+    margin-right: 156px;
+}
+
 .team-head {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -140,6 +263,9 @@ ul {
     color: #2E2F42;
     font-size: 20px;
     letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: 32px;
+    padding-bottom: 8px;
 }
 
 .team-text {
