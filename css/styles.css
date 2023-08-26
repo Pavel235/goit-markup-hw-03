@@ -14,29 +14,27 @@ h1, h2, h3, h4, h5, h6, p, ul {
   list-style: none;
 }
 
-header {
+img {
+    display: block;
+}
+
+.site-head {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.container-head {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1458px;
 }
 
 .container {
-    width: 1458px;
+    width: 1158px;
+    margin: 0 auto; 
+    padding: 0 15px;
 }
 
-nav {
+.head-nav {
     display: flex;
     align-items: center;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 40px;
-}
-
-nav ul li:first-child {
-    margin-left: 76px;
 }
 
 a {
@@ -49,24 +47,6 @@ ul {
 
 .address-info {
     font-style: normal;
-}
-
-.address-info ul li {
-    display: inline;
-    align-items: center;
-}
-
-.address-info ul li:first-child {
-    margin-left: 332px; 
-    margin-bottom: 24px;
-    margin-top: 24px;
-}
-
-.address-info ul li:last-child {
-    margin-right: 156px;
-    margin-bottom: 24px;
-    margin-top: 24px;
-    margin-left: 40px;
 }
 
 .address-style:hover {
@@ -93,10 +73,18 @@ ul {
     font-size: 18px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-left: 156px;
-    margin-top: 24px; 
+    margin-right: 76px; 
+    margin-top: 24px;
     margin-bottom: 24px;
-    width: 115px;
+    margin-left: 156 px;
+
+}
+
+.menu {
+    display: flex;
+    gap: 40px; 
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .site {
@@ -111,6 +99,19 @@ ul {
     color: #2E2F42;
     font-size: 16px;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.address-menu {
+    display: flex;
+    gap: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.address-menu li:first-child {
+    margin-left: 332px;
 }
 
 .contacts:hover {
@@ -123,6 +124,8 @@ ul {
 
 .solutions {
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .effect {
@@ -133,10 +136,7 @@ ul {
     font-size: 56px;
     text-align: center;
     letter-spacing: 0.02em;
-    padding-top: 188px;
-    padding-left: 472px;
-    padding-right: 472px;
-    padding-bottom: 48px;
+    max-width: 496px;
 }
 
 .service-button {
@@ -149,11 +149,10 @@ ul {
     font-size: 16px;
     letter-spacing: 0.04em;
     border-radius: 4px;
-    width: 169px;
+    min-width: 169px;
+    display: block;
     height: 56px;
-    margin-right: 635px;
-    margin-left: 636px;
-    margin-bottom: 188px;
+    border: none;
 }
 
 .service-button:hover {
