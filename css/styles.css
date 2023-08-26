@@ -137,6 +137,8 @@ ul {
     text-align: center;
     letter-spacing: 0.02em;
     max-width: 496px;
+    margin-bottom: 48px;
+    margin-left: 472px;
 }
 
 .service-button {
@@ -153,6 +155,8 @@ ul {
     display: block;
     height: 56px;
     border: none;
+    margin-left: 636px;
+    margin-right: 635px;
 }
 
 .service-button:hover {
@@ -163,34 +167,30 @@ ul {
     background-color: #404BBF;
 }
 
-.advantages ul {
+.advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.advantages-list {
     display: flex;
-    align-items: center;
-    margin-left: 24px;
-    margin-top: 60px;
-    margin-bottom: 120px;
+    gap: 24px; 
 }
 
-.advantages ul li:first-child {
-    margin-left: 156px;
-}
-
-.advantages ul li:last-child {
-    margin-right: 156px;
-}
-
-.advantages h2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    line-height: 1.11;
-    color: #2E2F42;
-    font-size: 36px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
+.advantages-list-item {
+    width: calc((100%-72px)/4);
 }
 
 .advantages-head {
@@ -200,6 +200,7 @@ ul {
     color: #2E2F42;
     font-size: 20px;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .advantages-text {
@@ -212,36 +213,24 @@ ul {
 
 .team {
     background-color:#FFFFFF;
+    width: calc((100%-72px)/4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-name-job {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .team-color {
     background-color: #F4F4FD;
-}
-
-.team-color h2 {
     padding-top: 120px;
-    padding-left: 639px;
-    padding-right: 639px;
-}
-
-.team-color ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 72px;
     padding-bottom: 120px;
 }
 
-.team-color ul li {
-    margin-left: 24px;
-}
-
-.team-color ul li:first-child {
-    margin-left: 156px;
-}
-
-.team-color ul li:last-child {
-    margin-right: 156px;
+.team-list {
+    display: flex;
+    gap: 24px; 
 }
 
 .team-head {
@@ -253,6 +242,7 @@ ul {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .team-member {
@@ -264,7 +254,7 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     margin-top: 32px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .team-text {
@@ -274,35 +264,11 @@ ul {
     font-size: 16px;
     letter-spacing: 0.02em;
     text-align: center;
-    margin-bottom: 32px;
 }
 
-.portfolio ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.portfolio ul li {
-    margin-left: 24px;
-}
-
-.portfolio ul li:first-child {
-    margin-left: 156px;
-}
-
-.portfolio ul li:nth-child(3) {
-    margin-right: 156px;
-    margin-bottom: 48px;
-}
-
-.portfolio ul li:nth-child(4) {
-    margin-left: 156px;
-}
-
-.portfolio ul li:last-child {
-    margin-right: 156px;
-    margin-bottom: 120px;
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-topic {
@@ -314,10 +280,24 @@ ul {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin-top: 120px;
     margin-bottom: 72px;
-    margin-left: 611px;
-    margin-right: 611px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-list-items {
+    width: calc((100%-48px)/3);
+}
+
+.portfolio-apps {
+    padding: 32px 16px;
+    border:  1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-header {
@@ -328,9 +308,7 @@ ul {
     font-size: 20px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin-top: 32px;
-    padding-left: 16px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -349,15 +327,15 @@ ul {
     color:#F4F4FD;
     font-size: 16px;
     letter-spacing: 0.02em;
-    padding-left: 156px;
-    padding-right: 1020px;
-    padding-bottom: 100px;
+    max-width: 264px;
 }
 
 .footer-color {
     background-color:#2E2F42;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-footer {
@@ -368,10 +346,8 @@ ul {
     font-size: 18px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-left: 156px;
-    padding-right: 1169px;
-    padding-bottom: 16px;
-    padding-top: 100px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-studio {
