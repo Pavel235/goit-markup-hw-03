@@ -274,9 +274,39 @@ ul {
     color:#434455;
     font-size: 16px;
     letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 32px;
 }
 
-.portfolio {
+.portfolio ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio ul li {
+    margin-left: 24px;
+}
+
+.portfolio ul li:first-child {
+    margin-left: 156px;
+}
+
+.portfolio ul li:nth-child(3) {
+    margin-right: 156px;
+    margin-bottom: 48px;
+}
+
+.portfolio ul li:nth-child(4) {
+    margin-left: 156px;
+}
+
+.portfolio ul li:last-child {
+    margin-right: 156px;
+    margin-bottom: 120px;
+}
+
+.portfolio-topic {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 1.11;
@@ -285,6 +315,10 @@ ul {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-top: 120px;
+    margin-bottom: 72px;
+    margin-left: 611px;
+    margin-right: 611px;
 }
 
 .portfolio-header {
@@ -295,6 +329,9 @@ ul {
     font-size: 20px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-top: 32px;
+    padding-left: 16px;
+    padding-bottom: 8px;
 }
 
 .portfolio-text {
@@ -303,6 +340,8 @@ ul {
     color:#434455;
     font-size: 16px;
     letter-spacing: 0.02em;
+    padding-left: 16px;
+    margin-bottom: 32px;
 }
 
 .footer-text {
@@ -311,10 +350,15 @@ ul {
     color:#F4F4FD;
     font-size: 16px;
     letter-spacing: 0.02em;
+    padding-left: 156px;
+    padding-right: 1020px;
+    padding-bottom: 100px;
 }
 
 .footer-color {
     background-color:#2E2F42;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .logo-footer {
@@ -325,6 +369,10 @@ ul {
     font-size: 18px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-left: 156px;
+    padding-right: 1169px;
+    padding-bottom: 16px;
+    padding-top: 100px;
 }
 
 .footer-studio {
