@@ -172,7 +172,7 @@ ul {
     padding-bottom: 120px;
 }
 
-.visually-hidden {
+.advantages-main-head .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
