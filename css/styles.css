@@ -172,7 +172,7 @@ ul {
     padding-bottom: 120px;
 }
 
-.advantages-main-head .visually-hidden {
+.advantages-main-head {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -288,10 +288,11 @@ ul {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    width: calc((100%-48px)/3);
 }
 
 .portfolio-list-items {
-    width: calc((100%-48px)/3);
+    width: calc((100%-48px)/3)
 }
 
 .portfolio-apps {
